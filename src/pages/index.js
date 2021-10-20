@@ -36,8 +36,6 @@ const IndexPage = ({ data }) => {
           }
         />
         <Hero content={data.hero.edges} />
-        {/* Articles is populated via Medium RSS Feed fetch */}
-        <Articles />
         <About content={data.about.edges} />
         <Interests content={data.interests.edges} />
         <Projects content={data.projects.edges} />
@@ -142,7 +140,6 @@ export const pageQuery = graphql`
             category
             emoji
             external
-            github
             screenshot {
               childImageSharp {
                 fluid(maxWidth: 400, quality: 90) {

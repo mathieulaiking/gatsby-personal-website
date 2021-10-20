@@ -298,7 +298,7 @@ const Projects = ({ content }) => {
                       ))}
                     </div>
                     <div className="links">
-                      {frontmatter.github && (
+                      {/* {frontmatter.github && (
                         <a
                           href={frontmatter.github}
                           target="_blank"
@@ -314,7 +314,7 @@ const Projects = ({ content }) => {
                             }
                           />
                         </a>
-                      )}
+                      )} */}
                       {frontmatter.external && (
                         <a
                           href={frontmatter.external}
